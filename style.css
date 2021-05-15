@@ -1,0 +1,330 @@
+/****************************GENERAL**********************/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Open Sans', sans-serif;
+    text-align: center;
+    color:hsl(243, 87%, 12%);
+}
+
+svg {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    padding: 1.2rem;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.img-fluid {
+    height: auto;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.justify-content-spacebetween {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    margin-bottom:1rem;
+    font-weight: 700;;
+}
+
+input[type=email] {
+    border: 1px solid hsl(243, 87%, 12%);
+    padding: .75rem;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin-bottom:1rem ;   
+    font-size: 1rem; 
+}
+
+input[type=email]::placeholder {
+    opacity: 0.6;
+}
+
+button {
+    font-family: 'Raleway', sans-serif;
+    background-color:hsl(224, 93%, 58%);
+    border: none;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    line-height: 1.5;
+    padding: .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: all .15s;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input[type=email]:invalid {
+    border-color:hsl(4, 60%, 72%);
+}
+
+.col-md-6 {
+    margin-bottom: 4rem;
+}
+
+/******************************HEADER**************************/
+
+header a {
+    color: hsl(243, 87%, 12%);
+    font-family: 'Raleway', sans-serif;
+}
+
+/************************HERO*********************************/
+
+#hero p {
+    margin-bottom:2rem;
+}
+
+#hero h2 {
+    font-size: 2rem;
+}
+
+#hero .row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*****************************TEAM*****************************/
+
+#team .row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#team {
+    background-color:#F8F8FE;
+    color: hsl(238, 22%, 44%);
+}
+
+#team h2 {
+    color: hsl(243, 87%, 12%);
+    font-size: 1.2rem;
+}
+
+/**********LINK*********/
+
+.underlined {
+    margin: 2rem 0;
+    padding: 0.3rem;
+}
+
+.underlined a  {
+    color: hsl(170, 45%, 43%);
+    padding: 5px 0;
+    border-bottom: 1px solid;
+}
+
+.underlined img {
+    vertical-align: middle;
+}
+
+.underlined a:hover {
+    transition: all 0.1s;
+    filter: saturate(3);
+}
+
+/******CARD******/
+
+.card {
+    background-color: #fff;
+    width: 80%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: auto;
+    text-align: start;
+    color: hsl(243, 87%, 12%);
+    border-radius: 4px;
+}
+
+.card .quote {
+    margin: 0.5rem 0;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 50px;
+    display: inline;
+}
+
+.card .role,
+.card .name {
+    margin: 0 .5rem;
+}
+
+.name {
+    font-weight: 700;
+    font-size: .8rem;
+    margin: 0;
+}
+
+.role {
+    font-size: 0.6rem;
+}
+
+/*******************************SIGNIN**********************/
+
+#signin {
+    background-color: hsl(238, 22%, 44%);
+    color:white;
+    padding: 5rem 0;
+}
+
+/***************************FOOTER**************************/
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    text-align: start;
+    padding: 3rem 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer .col-md-3 {
+    padding: 1rem 0;
+}
+
+footer li,
+.contact {
+    margin-bottom: 1rem;
+}
+
+.contact img {   
+    margin-right: 1rem;
+}
+
+footer p:last-child {
+    color:rgba(245, 239, 238, .4);
+    margin: 4rem auto 0 auto;
+}
+
+footer div.circle {
+    margin-right: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 40px;   
+    width: 40px;
+    text-align: center;
+    line-height:2.3;
+}
+
+/*******************************MEDIA QUERY******************/
+
+/*SM*/
+@media screen and (min-width: 576px) {
+
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+/*MD*/
+@media screen and (min-width: 768px) {
+    
+    body {
+        text-align: left;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction:row !important;
+        justify-content: space-between;
+    }
+
+    .col-md-6 {
+        width: 48%;
+    }
+
+    #team h2,
+    #signin h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin:0;
+    }
+    
+}
+
+/*LG*/
+@media screen and (min-width: 992px) {
+
+    button {
+        width: 40%;
+        height: 50px;
+    }
+
+    #hero input[type=email] {
+        width: 55%;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .flex-lg {
+        display: flex;
+    }
+}
+
+/*XL*/
+@media screen and (min-width: 1200px) {
+
+    .container {
+        max-width: 1140px;
+    }
+}

@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://desmavi.github.io/fylo)
+- Solution URL: [Add solution URL here](https://github.com/desmavi/fylo)
 - Live Site URL: [https://desmavi.github.io/fylo](https://desmavi.github.io/fylo)
 
 ## My process

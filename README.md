@@ -74,5 +74,5 @@ The code is more readable and it's easier to find what you're looking for.
 ## Author
 
 - Frontend Mentor - [@desmavi](https://www.frontendmentor.io/profile/desmavi)
-- Twitter - [@desmavi](https://twitter.com/desmavi)
+
 
